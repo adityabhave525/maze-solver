@@ -19,7 +19,7 @@ class Window:
             self.redraw()
         print("Window Closed")
 
-    def draw_line(self, line, fill_color):
+    def draw_line(self, line, fill_color="black"):
         line.draw(self.__canvas, fill_color)
     
     def close(self):
@@ -40,3 +40,5 @@ class Line:
         canvas.create_line(
             self.p1.x, self.p1.y, self.p2.x, self.p2.y, fill=fill_color, width=2
         )
+
+
